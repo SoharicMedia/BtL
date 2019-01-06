@@ -1,0 +1,64 @@
+<data>
+  <conversations>
+    <conversation id="btl04" texten="Slender Man" elementProperties="type=generableonce;">
+      <scene>
+        <timer id="sceneElem_1" texten="" addToAAR="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, what is your emergency?" elementProperties="option=2;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="2" texten="Someone followed me and my brother from school. Our parents are not home." elementProperties="option=who;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="who" texten="Have you seen this person before?" elementProperties="option=3;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="3" texten="No. Can you please send help?" elementProperties="option=Where;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="back" texten="EMPTY ID: back" elementProperties="" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="end" texten="..." elementProperties="" actionOnEnd="actionHangup" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="Where" texten="Where are you now?" elementProperties="option=4;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="4" texten="At home. In the living room. I'm looking out the front window. The tall man is scaring us." elementProperties="option=5;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="5" texten="Where is this guy?" elementProperties="option=6;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="6" texten="In front of the house. " elementProperties="option=7;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="7" texten="What is he doing?" elementProperties="option=8;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="8" texten="He's standing, behind a tree. He's... He's very tall. Help us. I'm scared." elementProperties="option=9;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="9" texten="THEY BELONG TO ME" elementProperties="option=10;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="10" texten="What was that?" elementProperties="option=11;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="11" texten="I don't know. The lights went out. I'm scared. " elementProperties="option=12;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="12" texten="Help is on the way!" elementProperties="option=13;" actionOnEnd="actionSetLocation;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="13" texten="Oh my god Oh my god Oh my god" elementProperties="option=14;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="14" texten="What's happening?" elementProperties="option=15;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="15" texten="(HEAVY BREATHING) He's... He's... He's looking at me. He... He has no face. His face is gone. " elementProperties="option=16;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="16" texten="Calm down. Does he have a mask on? " elementProperties="option=17;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="17" texten="No. He's coming. He's coming." elementProperties="option=18;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="18" texten="Calm down. Help is on the way. As long as he's outside and you're inside you'll be fine. Describe him to me." elementProperties="option=19;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="19" texten="He has a suit on and a tie. He's very tall, he has long arms, he's bald. I'm scared." elementProperties="option=20;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="20" texten="Be brave okay? I want you to be strong right now. It's going to be fine." elementProperties="option=21;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="21" texten="When are you coming?" elementProperties="option=22;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="22" texten="How is you brother doing?" elementProperties="option=23;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="23" texten="He's not doing anything. He's acting strange." elementProperties="option=24;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="24" texten="What is he doing?" elementProperties="option=25;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="25" texten="Staring. He's staring at me. " elementProperties="option=26;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="26" texten="Is he scared? " elementProperties="option=27;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="27" texten="No. He's not saying anything. " elementProperties="option=28;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="28" texten="How old is he?" elementProperties="option=29;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="29" texten="Nine. " elementProperties="option=30;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="30" texten="What is the tall man doing now? " elementProperties="option=31;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="31" texten="(HEAVY BREATHING)" elementProperties="option=32;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="32" texten="What's the matter?" elementProperties="option=33;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="33" texten="(HEAVY BREATHING) He's... He's in front of the window. Facing  me. " elementProperties="option=34;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="34" texten="Back away from the window, get your brother, go into the restroom and lock the door." elementProperties="option=35;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="35" texten="(WINDOW BREAKING) (SCREAMING) " elementProperties="option=36;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="36" texten="Young lady. Are you okay? Hello. Are you there? Hello? Young lady are you okay? " elementProperties="option=37;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="37" texten="I'm fine now, I'm not scared anymore. The tall man just wants to play. He's my friend. " elementProperties="option=38;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="38" texten="Where is he? " elementProperties="option=39;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="39" texten="(Static) THEY'RE WITH ME NOW. THEY'RE SAFE. " elementProperties="option=40;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="40" texten="Who are you? " elementProperties="option=41;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="41" texten="SHE WILL BE MISSED." elementProperties="option=42;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="42" texten="Sir please don't do this. " elementProperties="option=43;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="43" texten="I SEE YOU OPERATOR, YOU'RE SCARED, I FEEL YOUR WORRIES AND YOUR DOUBTS, THE ONE YOU CALL SARAH MAYOR WILL SOON BE MINE TOO. " elementProperties="option=44;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="44" texten="How do you know my daughter's... How do you know my daughter's name?" elementProperties="option=45;" addToAAR="" operator="Operator" emotions="" />
+        <DialogOption id="45" texten="GOODBYE." elementProperties="option=46;" addToAAR="" operator="Caller" emotions="" />
+        <DialogOption id="46" texten="Hello? Hello? I got to get home!" elementProperties="option=end;" addToAAR="" operator="Operator" emotions="" />
+      </dialog>
+      <aar>
+        <reportElement id="story_1" texten="" />
+      </aar>
+    </conversation>
+  </conversations>
+</data>

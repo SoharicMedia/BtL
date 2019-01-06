@@ -1,0 +1,32 @@
+﻿<data><conversations>
+<conversation elementProperties="type=generableonce;" id="btl03" texten="Krusty Krab">
+	<scene>
+	<witness elementProperties="sex=M;
+	type=White;" id="caller" texten="Caller" />
+	</scene>
+	<dialog>
+	<dialogOption COMMENT="" id="1" operator="Operator:" texten="911, what's your emergency?" default="2" />
+	<dialogOption COMMENT="y" id="2" operator="Caller:" texten="Hello, is this the Krusty Krab? I'd like to make an order at [[ADDRESS]]." default="5" option2="3" option3="12" actionOnEnd="actionSetLocation;" addtoAAR="story" />
+	<dialogOption COMMENT="" id="12" operator="Operator:" texten="Do you have an emergency sir?" default="13" />
+	<dialogOption COMMENT="y" id="13" operator="Caller:" texten="Well no, I guess not. I just want some food." default="11" />
+	<dialogOption COMMENT="" id="3" operator="Operator:" texten="{PLAY ALONG}No, you've reached Patrick." default="4" actionOnEnd="opinionEffect = -2; onIgnore = -2;" />
+	<dialogOption COMMENT="y" id="4" operator="Caller:" texten="Oh, sorry!" actionOnEnd="actionHangup" addtoAAR="fail" />
+	<dialogOption COMMENT="" id="5" operator="Operator:" texten="Excuse me? You've reached 911 ..." default="6" />
+	<dialogOption COMMENT="y" id="6" operator="Caller:" texten="Err my order, yes. I'd like . . . one Krabby Patty Pizza with two Kelp Shakes on the side." default="7" option2="9" option3="11" />
+	<dialogOption COMMENT="" id="7" operator="Operator:" texten="{SEND PIZZA}Okay Sir, your pizza will be there soon." default="8" />
+	<dialogOption COMMENT="y" id="8" operator="Caller:" texten="Okay, thank you." actionOnEnd="actionHangup; opinionEffect = 1; onIgnore = 0" addtoAAR="clue" />
+	<dialogOption COMMENT="" id="9" operator="Operator:" texten="{SEND POLICE}There's a unit on route to your location." default="10" />
+	<dialogOption COMMENT="y" id="10" operator="Caller:" texten="What quick service! I'll be sure to leave a good review." actionOnEnd="actionHangup; opinionEffect = 3" addtoAAR="prison" />
+	<dialogOption COMMENT="" id="11" operator="Operator:" texten="{HANGUP}This isn't what 911 is for sir." actionOnEnd="actionHangup; opinionEffect = -1; onIgnore = -1" addtoAAR="helped" />
+	<dialogOption COMMENT="y" id="reminder" operator="Caller:" texten="...." />
+	<dialogOption COMMENT="y" id="reminder2" operator="Caller:" texten="...." />
+	</dialog>
+	<aar>
+	<reportElement id="story" texten="The caller was in fact trying to order a pizza." />
+	<reportElement id="fail" texten="The operator pranked the caller." />
+	<reportElement id="clue" texten="The operator was unsure whether emergency services should be sent to the scene" />
+	<reportElement id="prison" texten="The operator thought a police presence would be prudent." />
+	<reportElement id="helped" texten="The operator failed to help the caller." />
+	</aar>
+</conversation>
+</conversations></data>

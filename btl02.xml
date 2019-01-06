@@ -1,0 +1,55 @@
+<data>
+  <conversations>
+    <conversation id="btl02" texten="Bad Comedian" elementProperties="type=generableonce">
+      <scene>
+        <witness id="caller" texten="Caller" addToAAR="" />
+      </scene>
+      <dialog>
+        <DialogOption id="1" texten="911, police emergency." elementProperties="" addToAAR="" operator="Operator" emotions="" default="2" option2="2.1" />
+        <DialogOption id="2" texten="Yeah, it's not funny" addToAAR="" operator="Caller" actionOnEnd="opinionEffect=1;" default="3" option2="4" />
+        <DialogOption id="3" texten="What's not funny sir?" addToAAR="" operator="Operator" default="6" />
+        <DialogOption id="4" texten="I beg your pardon. You've reached the emergency services." addToAAR="" operator="Operator" default="5" />
+        <DialogOption id="6" texten="This comedian, he's not funny at all!" addToAAR="" operator="Caller" actionOnEnd="opinionEffect+=-2;" default="8" />
+        <DialogOption id="5" texten="Yes, I know. I have an emergency." addToAAR="" operator="Caller" default="10" option2="end" />
+        <DialogOption id="end" texten="{HANGUP} Please don't block the emergency line when you don't have an emergency in the future sir. Thank you, bye." addToAAR="story" operator="Operator" actionOnEnd="actionHangup;" emotions="" />
+        <DialogOption id="8" texten="Do you have a genuine emergency sir?" addToAAR="" operator="Operator" default="9" />
+        <DialogOption id="9" texten="No, no I guess not. Sorry I bothered you." addToAAR="" operator="Caller" default="end" />
+        <DialogOption id="10" texten="Sorry, what's that sir?" addToAAR="" operator="Operator" default="11" />
+        <DialogOption id="11" texten="Everyone's dying!" addToAAR="" operator="Caller" default="12" option2="13" />
+        <DialogOption id="12" texten="Sir, where are you?" addToAAR="" operator="Operator" default="14" />
+        <DialogOption id="13" texten="What do you mean sir?" addToAAR="" operator="Operator" emotions="" default="15" />
+        <DialogOption id="14" texten="I'm at [[ADDRESS]] can you do something about it?" addToAAR="" operator="Caller" actionOnEnd="actionSetLocation;" default="16" />
+        <DialogOption id="15" texten="Laughter man. Everyone's dying of laughter except me." addToAAR="" operator="Caller" default="20" />
+        <DialogOption id="16" texten="Okay sir, I'm sending an officer to check it out. Please wait there." addToAAR="" operator="Operator" default="17" />
+        <DialogOption id="17" texten="I'll be waiting. This comedian needs to be taken off the stage." addToAAR="" operator="Caller" default="18" />
+        <DialogOption id="18" texten="{CANCEL}Sir, I can't send an officer to help with that. I've cancelled the officer I sent." addToAAR="" operator="Operator" default="19" />
+        <DialogOption id="19" texten="Oh, okay." addToAAR="" operator="Caller" actionOnEnd="opinionEffect+=-2;" default="end" />
+        <DialogOption id="20" texten="Sir, I can't send an officer to help with that." addToAAR="" operator="Operator" emotions="" default="19" />
+	<DialogOption id="reminder" texten="Hello?" operator="Caller" />
+	<DialogOption id="reminder2" texten="Are you there?" operator="Caller" />
+	<DialogOption id="back" texten="Back error." />
+	<DialogOption id="2.1" texten="Yeah, it's not funny" addToAAR="" operator="Caller" actionOnEnd="opinionEffect=1;" default="3.1" option2="4.1" />
+        <DialogOption id="3.1" texten="What's not funny sir?" addToAAR="" operator="Operator" default="6.1" />
+        <DialogOption id="4.1" texten="I beg your pardon. You've reached the emergency services." addToAAR="" operator="Operator" default="5.1" />
+        <DialogOption id="6.1" texten="This comedian, he's not funny at all!" addToAAR="" operator="Caller" actionOnEnd="opinionEffect+=-2;" default="8.1" />
+        <DialogOption id="5.1" texten="Yes, I know. I have an emergency." addToAAR="" operator="Caller" default="10.1" option2="end" />
+        <DialogOption id="8.1" texten="Do you have a genuine emergency sir?" addToAAR="" operator="Operator" default="9.1" />
+        <DialogOption id="9.1" texten="No, no I guess not. Sorry I bothered you." addToAAR="" operator="Caller" default="end" />
+        <DialogOption id="10.1" texten="Sorry, what's that sir?" addToAAR="" operator="Operator" default="11.1" />
+        <DialogOption id="11.1" texten="Everyone's dying!" addToAAR="" operator="Caller" default="12.1" option2="13.1" />
+        <DialogOption id="12.1" texten="Sir, where are you?" addToAAR="" operator="Operator" default="14.1" />
+        <DialogOption id="13.1" texten="What do you mean sir?" addToAAR="" operator="Operator" default="15.1" />
+        <DialogOption id="14.1" texten="I'm at [[ADDRESS]] can you do something about it?" addToAAR="" operator="Caller" actionOnEnd="actionSetLocation;" default="16.1" />
+        <DialogOption id="15.1" texten="Laughter man. Everyone's dying of laughter except me." addToAAR="" operator="Caller" default="20.1" />
+        <DialogOption id="16.1" texten="Okay sir, I'm sending an officer to check it out. Please wait there." addToAAR="" operator="Operator" default="17.1" />
+        <DialogOption id="17.1" texten="I'll be waiting. This comedian needs to be taken off the stage." addToAAR="" operator="Caller" default="18.1" />
+        <DialogOption id="18.1" texten="{CANCEL}Sir, I can't send an officer to help with that. I've cancelled the officer I sent." addToAAR="" operator="Operator" default="19.1" />
+        <DialogOption id="19.1" texten="Oh, okay." addToAAR="" operator="Caller" actionOnEnd="opinionEffect+=-2;" default="end" />
+        <DialogOption id="20.1" texten="Sir, I can't send an officer to help with that." addToAAR="" operator="Operator" default="19.1" />
+      </dialog>
+      <aar>
+        <reportElement id="story" texten="A man called the emergency services to complain about a bad comedian." />
+      </aar>
+    </conversation>
+  </conversations>
+</data>
